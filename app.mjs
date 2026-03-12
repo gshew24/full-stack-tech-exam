@@ -53,7 +53,6 @@ app.post('/api/get-name', async (req, res) => {
       name: result.name,
       emoji: result.emoji
     });
-
   } catch (error) {
     console.error('Error retrieving name:', error);
     res.status(500).json({ error: 'Failed to retrieve name' });
@@ -82,7 +81,6 @@ app.get('/api/init-emoji', async (req, res) => {
       message: 'name & emoji recorded',
       id: result.insertedId
     });
-
   } catch (error) {
     console.error('Error creating attendance:', error);
     res.status(500).json({ error: 'Failed to retrieve emoji' });
