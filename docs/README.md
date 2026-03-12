@@ -1,83 +1,51 @@
-># Full Stack Tech Exam - Readme Template
+# Full Stack Tech Exam
 
-**Name:** [Your Name Here]
-
-## 🔗 Required Links
-
-| Component | Link | 
-|-----------|------|
-| **GitHub Repository** | [https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name) | 
-| **GitHub Pages (docs/)** | [https://your-username.github.io/your-repo-name/](https://your-username.github.io/your-repo-name/) | 
-| **Dev Server (Render)** | [https://your-app-name-dev.onrender.com](https://your-app-name-dev.onrender.com) | 
-| **Production Server (GCP)** | [http://your.static.external.ip:3000](http://your.static.external.ip:3000) | 
-| **Issue** | [https://github.com/your-username/your-repo-name/issues/1](https://github.com/your-username/your-repo-name/issues/1) | 
-| **Pull Request** | [https://github.com/your-username/your-repo-name/pull/1](https://github.com/your-username/your-repo-name/pull/1) | 
-| **Milestone** | [https://github.com/your-username/your-repo-name/milestone/1](https://github.com/your-username/your-repo-name/milestone/1) | 
-| **Successful CI/CD Action** | [https://github.com/your-username/your-repo-name/actions/runs/your-run-id](https://github.com/your-username/your-repo-name/actions/runs/your-run-id) | 
-| **ssh cmd to your gcp** | `ssh -i student-key bcumbie@your.static.external.ip` | 
+**Name:** Griffin Shewbart
 
 ---
 
-# Full Stack Tech Exam Instructions
+## Required Links
 
->Starting with a given codebase (provided as a GitHub repository), 
->configure and develop a full stack infrastructure and app. 
+| Component | Link |
+|---|---|
+| GitHub Repository | https://github.com/gshew24/full-stack-tech-exam |
+| GitHub Pages (docs/) | https://gshew24.github.io/full-stack-tech-exam/ |
+| Dev Server (Render) | https://your-app-name-dev.onrender.com |
+| Production Server (GCP) | http://8.228.21.67:3000 |
+| Issue | https://github.com/gshew24/full-stack-tech-exam/issues/1 |
+| Pull Request | https://github.com/gshew24/full-stack-tech-exam/pull/1 |
+| Milestone | https://github.com/gshew24/full-stack-tech-exam/milestone/1 |
+| Successful CI/CD Action | https://github.com/gshew24/full-stack-tech-exam/actions |
 
-## Requirements 
-> for the sake of time, you may can approach these steps in the order you choose. 
+---
 
-### 1️⃣ access the codebase
-- using the [stater code base repository](https://github.com/barrycumbie/full-stack-tech-exam)
-- bring the code into your own repository via `fork` `import` or `copy/paste`
+## SSH Command to GCP
 
-### 2️⃣ configure your repository
-- set up a GitHub Pages deployment pointing to `docs/`
-- include the link in the `About`
-- ensure the GitHub Pages shows your `README` 
-  
-### 3️⃣ modify the codebase
-- take the steps to get the `Node.js` app working (suggest locally)
-- an endpoint to serve front end html via a `public/` directory
-- `public` is organized with no internal `scripts` or `styles` (use directories)
-- an `input` to submit a user name
-- a `dom` element to receive a response from the server
-- upgrade the front end with `html` & `styles` to guide a user what is going on
-- for the server `app.mjs` ensure the correct packages are installed, imported, & available
-- refactor the front end `html` from a `<form>` to use the `js fetch()`
-- environmental variables with a provided `mongodb` connection string 
-- endpoints (middlewares)
-	- input an emoji for a given username (no front end required, see code comments)
-	- serve a static `html` from `public/` (`get to slash`)
-	- receive user input & return a response
-- include in the `README` links to your production server `http://static.external.gcp.ip`
+```bash
+ssh -i student-key bcumbie@8.228.21.67
 
-### 4️⃣ set up a `dev` server
-- create a `dev` branch & a dev server
-- include the link in your `README`
+---
 
-### 5️⃣ set up a `gcp` `compute engine` `vm instance`
-- config = firewall `http` & `https`, `static external ip` & requisite `ssh` public keys (including the `student-key.pub`)
+Project Overview
 
-`student-key.pub # available on canvas`
+This project configures and deploys a full stack Node.js application using GitHub, GitHub Pages, MongoDB, and a GCP Compute Engine VM.
 
-- `ssh` into the the vm `instance` 
-- update the `OS` & install the needed packages
-- initialize your repository (`git clone` in proper directory)
-- set up your `nginx` `reverse-proxy`
-- (test your app using a `node` cmd)
-- run your app with a production-grade process manager 
-- getting app errors, try `pm2 loggs -n 50`
+The application serves a frontend page that allows a user to submit a username. The request is sent to the server using JavaScript fetch() and the server responds with the associated emoji stored in MongoDB.
+---
+Features Implemented
 
-###  6️⃣ set up `ci/cd` on the `main` branch
-- use a `.github/workflows/` `.yaml` file
-- ensure use of `Git Hub action` `env` `secrets` & `variables`
-- create a milestone called `full stack tech exam`
-- test `ci/cd` with an `issue` & `pull request` 
-	- ensure the two are linked
-	- assign both the issue and pull request to the `full stack tech exam` milestone
-	- assign both to yourself 
-- include described links on your `readme` to 
-	- the `issue`, `pull request`, `milestone` & successful `action`
+Node.js Express server
 
-## Submission
-- a link to your repository. 
+Static frontend served from the public directory
+
+Frontend form converted to JavaScript fetch() request
+
+Username input sent to backend API endpoint
+
+Response displayed dynamically in the DOM
+
+MongoDB integration using environment variables
+
+Deployment on a GCP VM instance
+
+---
