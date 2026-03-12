@@ -23,14 +23,15 @@
 
 ```bash
 ssh -i student-key bcumbie@8.228.21.67
---------------------------------------------------------
-Project Overview
+---
+## Project Overview
 
 This project configures and deploys a full stack Node.js application using GitHub, GitHub Pages, MongoDB, and a GCP Compute Engine VM.
 
 The application serves a frontend page that allows a user to submit a username. The request is sent to the server using JavaScript fetch() and the server responds with the associated emoji stored in MongoDB.
---------------------------------------------------------
-Features Implemented
+---
+
+## Features Implemented
 
 Node.js Express server
 
