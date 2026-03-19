@@ -14,7 +14,7 @@
 | Production Server (GCP) | http://8.228.21.67:3000                                     |
 | Issue                   | https://github.com/gshew24/full-stack-tech-exam/issues/1    |
 | Pull Request            | https://github.com/gshew24/full-stack-tech-exam/pull/2      |
-| Milestone               | https://github.com/gshew24/full-stack-tech-exam/milestone/1 |
+| Milestone               | https://github.com/gshew24/full-stack-tech-exam/milestones/1 |
 | Successful CI/CD Action | https://github.com/gshew24/full-stack-tech-exam/actions     |
 
 ---
