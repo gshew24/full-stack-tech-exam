@@ -4,26 +4,19 @@
 
 ---
 
-## Required Links
+## 🔗 Required Links
 
-| Component               | Link                                                         |
-| ----------------------- | ------------------------------------------------------------ |
-| GitHub Repository       | https://github.com/gshew24/full-stack-tech-exam              |
-| GitHub Pages (docs/)    | https://gshew24.github.io/full-stack-tech-exam/              |
-| Dev Server (Render)     | Not deployed                                                 |
-| Production Server (GCP) | http://8.228.21.67:3000                                      |
-| Issue                   | https://github.com/gshew24/full-stack-tech-exam/issues/1     |
-| Pull Request            | https://github.com/gshew24/full-stack-tech-exam/pull/2       |
-| Milestone               | https://github.com/gshew24/full-stack-tech-exam/milestones/1 |
-| Successful CI/CD Action | https://github.com/gshew24/full-stack-tech-exam/actions      |
-
----
-
-## SSH Command to GCP
-
-```bash
-ssh -i student-key bcumbie@8.228.21.67
-```
+| Component | Link |
+|---|---|
+| GitHub Repository | https://github.com/gshew24/full-stack-tech-exam |
+| GitHub Pages (docs/) | https://gshew24.github.io/full-stack-tech-exam/ |
+| Dev Server (Render) | Not deployed |
+| Production Server (GCP) | http://8.228.21.67:3000 |
+| Issue | https://github.com/gshew24/full-stack-tech-exam/issues/1 |
+| Pull Request | https://github.com/gshew24/full-stack-tech-exam/pull/2 |
+| Milestone | https://github.com/gshew24/full-stack-tech-exam/milestones/1 |
+| Successful CI/CD Action | https://github.com/gshew24/full-stack-tech-exam/actions |
+| SSH Command to GCP | `ssh -i student-key bcumbie@8.228.21.67` |
 
 ---
 
