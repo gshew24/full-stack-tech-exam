@@ -45,15 +45,6 @@ app.post('/api/get-name', async (req, res) => {
 
     const cleanName = userName.toLowerCase().trim();
 
-    // fallback so griffin always works even if mongo fails
-    if (cleanName === 'griffin') {
-      return res.json({
-        message: 'Name found',
-        name: 'griffin',
-        emoji: '🦅'
-      });
-    }
-
     const db = client.db('cis486');
     const collection = db.collection('exam');
 
